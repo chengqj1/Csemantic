@@ -9,3 +9,9 @@ export PATH=$JAVA_HOME/bin:$PATH:/opt/cloudera/parcels/CDH/bin:/jena/apache-jena
  ./tdbstats  --loc=/jena/db
  
  tdbquery --loc=/jena/db "SELECT * WHERE { ?a ?b ?c }"
+ 
+ ./tdbdump --loc=/jena/db  >db.ttl
+ 
+ ./sparql --data="./camera.owl"  "SELECT * WHERE { ?a ?b ?c }"
+ 
+  rdfparse pizza.owl.rdf  >pizza.ttl
