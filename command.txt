@@ -15,3 +15,5 @@ export PATH=$JAVA_HOME/bin:$PATH:/opt/cloudera/parcels/CDH/bin:/jena/apache-jena
  ./sparql --data="./camera.owl"  "SELECT * WHERE { ?a ?b ?c }"
  
   rdfparse pizza.owl.rdf  >pizza.ttl
+  
+  bin/sparql --data=doc/Tutorial/vc-db-1.rdf --query=doc/Tutorial/q1.rq
