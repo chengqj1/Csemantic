@@ -1,0 +1,81 @@
+SELECT ?x
+WHERE
+ { ?x <http://www.w3.org/2001/vcard-rdf/3.0#FN> "John Smith" }
+
+SELECT ?x ?fname
+WHERE {?x  <http://www.w3.org/2001/vcard-rdf/3.0#FN>  ?fname}
+
+
+SELECT ?givenName
+WHERE
+  { ?y  <http://www.w3.org/2001/vcard-rdf/3.0#NICKNAME>  "Smithy" .
+    ?y  <http://www.w3.org/2001/vcard-rdf/3.0#FN>  ?givenName .
+  }
+
+SELECT ?givenName
+WHERE
+  { ?y  <http://www.w3.org/2001/vcard-rdf/3.0#NICKNAME>  "Smithy" .
+    ?y  <http://www.w3.org/2001/vcard-rdf/3.0#FN>  ?givenName .
+  }
+
+PREFIX vcard:      <http://www.w3.org/2001/vcard-rdf/3.0#>
+
+SELECT ?name 
+WHERE
+{
+    ?person vcard:FN  ?name .
+    OPTIONAL { ?person vcard:NICKNAME  ?n .}
+    FILTER regex(?n, "r", "i").
+   
+}
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?subject ?predicate ?object
+WHERE {
+  ?subject ?predicate ?object
+}
+LIMIT 25
+
+
+
+PREFIX vcard:      <http://www.w3.org/2001/vcard-rdf/3.0#>
+
+SELECT ?givenName ?fn
+WHERE
+ { ?y vcard:Family "Smith" .
+   ?y vcard:Given  ?givenName .
+  
+ }
+
+PREFIX vcard: <http://www.w3.org/2001/vcard-rdf/3.0#>
+
+SELECT ?g  ?fa
+WHERE
+{ ?y vcard:Given ?g .
+  FILTER regex(?g, "r", "i").
+  ?y vcard:Family ?fa.
+ }
+
+PREFIX info: <http://somewhere/peopleInfo#>
+
+SELECT ?resource
+WHERE
+  {
+    ?resource info:age ?age .
+    FILTER (?age >= 24)
+  }
+
+PREFIX vcard:      <http://www.w3.org/2001/vcard-rdf/3.0#>
+
+SELECT ?name ?n
+WHERE
+{
+    ?person vcard:FN  ?name .
+    OPTIONAL { ?person vcard:NICKNAME  ?n .}
+    FILTER regex(?n, "a", "i").
+   
+}
