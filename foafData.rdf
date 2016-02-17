@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Ontology rdf:about="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl">
+        <imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <AnnotationProperty rdf:about="&foaf;givenname"/>
+    <AnnotationProperty rdf:about="&foaf;mbox_sha1sum"/>
+    <AnnotationProperty rdf:about="&foaf;nick"/>
+    <AnnotationProperty rdf:about="&foaf;homepage"/>
+    <AnnotationProperty rdf:about="&foaf;depiction"/>
+    <AnnotationProperty rdf:about="&foaf;title"/>
+    <AnnotationProperty rdf:about="&foaf;workInfoHomepage"/>
+    <AnnotationProperty rdf:about="&foaf;workplaceHomepage"/>
+    <AnnotationProperty rdf:about="&foaf;family_name"/>
+    <AnnotationProperty rdf:about="&foaf;knows"/>
+    <AnnotationProperty rdf:about="&foaf;schoolHomepage"/>
+    <AnnotationProperty rdf:about="&foaf;phone"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#Ontology -->
+
+    <NamedIndividual rdf:about="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#Ontology">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <foaf:name rdf:datatype="&xsd;string">I. M. Ontology</foaf:name>
+        <rdfs:seeAlso rdf:datatype="&xsd;string">http://ont.com</rdfs:seeAlso>
+        <foaf:mbox_sha1sum rdf:datatype="&xsd;string">mailto:ont@gmail.com</foaf:mbox_sha1sum>
+    </NamedIndividual>
+    
+
+
+    <!-- http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#Reasoner -->
+
+    <NamedIndividual rdf:about="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#Reasoner">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <foaf:name rdf:datatype="&xsd;string">Ican Reason</foaf:name>
+        <rdfs:seeAlso rdf:datatype="&xsd;string">http://reasoner.com</rdfs:seeAlso>
+        <foaf:mbox_sha1sum rdf:datatype="&xsd;string">maillto:reason@hotmail.com</foaf:mbox_sha1sum>
+    </NamedIndividual>
+    
+
+
+    <!-- http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#Statement -->
+
+    <NamedIndividual rdf:about="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#Statement">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <foaf:name rdf:datatype="&xsd;string">Makea Statement</foaf:name>
+        <rdfs:seeAlso rdf:datatype="&xsd;string">http://statement.com</rdfs:seeAlso>
+        <foaf:mbox_sha1sum rdf:datatype="&xsd;string">mailto:mstatement@gmail.com</foaf:mbox_sha1sum>
+    </NamedIndividual>
+    
+
+
+    <!-- http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#http://blog.sina.com.cn/zhoujiagenontology -->
+
+    <NamedIndividual rdf:about="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#http://blog.sina.com.cn/zhoujiagenontology"/>
+    
+
+
+    <!-- http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#http://s8.sinaimg.cn/mw690/002RJaAlty6FSYutTO777&amp;690 -->
+
+    <NamedIndividual rdf:about="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#http://s8.sinaimg.cn/mw690/002RJaAlty6FSYutTO777&amp;690">
+        <rdf:type rdf:resource="&foaf;Image"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#http://www.cqu.edu.cn/ -->
+
+    <NamedIndividual rdf:about="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#http://www.cqu.edu.cn/"/>
+    
+
+
+    <!-- http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#http://www.founderinternational.com/ -->
+
+    <NamedIndividual rdf:about="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#http://www.founderinternational.com/"/>
+    
+
+
+    <!-- http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#me -->
+
+    <NamedIndividual rdf:about="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#me">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <foaf:givenname rdf:datatype="&xsd;string">Semantic</foaf:givenname>
+        <foaf:name rdf:datatype="&xsd;string">Semantic Web</foaf:name>
+        <foaf:family_name rdf:datatype="&xsd;string">Web</foaf:family_name>
+        <foaf:nick rdf:datatype="&xsd;string">Webby</foaf:nick>
+        <foaf:title rdf:datatype="&xsd;string">master</foaf:title>
+        <foaf:mbox_sha1sum rdf:datatype="&xsd;string">zhoujiagen@gmail.com</foaf:mbox_sha1sum>
+        <foaf:knows rdf:resource="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#Ontology"/>
+        <foaf:knows rdf:resource="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#Reasoner"/>
+        <foaf:knows rdf:resource="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#Statement"/>
+        <foaf:homepage rdf:resource="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#http://blog.sina.com.cn/zhoujiagenontology"/>
+        <foaf:depiction rdf:resource="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#http://s8.sinaimg.cn/mw690/002RJaAlty6FSYutTO777&amp;690"/>
+        <foaf:schoolHomepage rdf:resource="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#http://www.cqu.edu.cn/"/>
+        <foaf:workplaceHomepage rdf:resource="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#http://www.founderinternational.com/"/>
+        <foaf:workInfoHomepage rdf:resource="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#http://www.founderinternational.com/"/>
+        <foaf:phone rdf:resource="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#tel:13552854032"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#tel:13552854032 -->
+
+    <NamedIndividual rdf:about="http://blog.sina.com.cn/zhoujiagenontology/helloworld.owl#tel:13552854032"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.5.1912) http://owlapi.sourceforge.net -->

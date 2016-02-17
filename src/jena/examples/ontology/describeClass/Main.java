@@ -72,7 +72,14 @@ public class Main {
         else {
             for (Iterator<OntClass> i = m.listClasses();  i.hasNext(); ) {
                 // now list the classes
-                dc.describeClass( System.out, i.next() );
+            	OntClass oc= i.next();
+            	try{
+            		System.out.println("***********"+oc.getURI());
+            	}catch(Exception o){
+            		
+            	}
+                dc.describeClass( System.out, oc);
+                //break;
             }
         }
     }
