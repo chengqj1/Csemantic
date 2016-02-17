@@ -1,0 +1,19 @@
+export JENAROOT=/jena/apache-jena-3.0.1/apache-jena-3.0.1
+
+export PATH=$JAVA_HOME/bin:$PATH:/opt/cloudera/parcels/CDH/bin:/jena/apache-jena-3.0.1/apache-jena-3.0.1/b
+
+./sparql -version
+
+./tdbloader  --loc=/disk/f/freebase /disk/e/freebase/freebase-rdf-latest 
+
+ ./tdbstats  --loc=/jena/db
+ 
+ tdbquery --loc=/jena/db "SELECT * WHERE { ?a ?b ?c }"
+ 
+ ./tdbdump --loc=/jena/db  >db.ttl
+ 
+ ./sparql --data="./camera.owl"  "SELECT * WHERE { ?a ?b ?c }"
+ 
+  rdfparse pizza.owl.rdf  >pizza.ttl
+  
+  bin/sparql --data=doc/Tutorial/vc-db-1.rdf --query=doc/Tutorial/q1.rq
