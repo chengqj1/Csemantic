@@ -163,24 +163,24 @@ public class ExampleConstructQuads {
 		arq.qparse.main("--in", "arq", queryString);
 
 		// run-construct-quad-test
-		System.out.println("run-construct-quad-test:");
-		File[] tests = new File("testing/ARQ/Syntax/Syntax-ARQ")
-				.listFiles((dir, fname)->{
-						if (fname.startsWith("syntax-quad-construct-")) {
-							return true;
-						}
-						return false;
-				});
-		for (File test : tests) {
-			System.out.println("======== File: "+test.getName());
-			try (BufferedReader br = new BufferedReader(new FileReader(test))) {
-				String line = null;
-				while( (line = br.readLine()) != null){
-					System.out.println(line);
-				}
-			}
-			System.out.println("==== Output of qparse --file "+ test.getName());
-			arq.qparse.main("--in", "arq", "--file", test.getAbsolutePath());
-		}
+//		System.out.println("run-construct-quad-test:");
+//		File[] tests = new File("testing/ARQ/Syntax/Syntax-ARQ")
+//				.listFiles((dir, fname)->{
+//						if (fname.startsWith("syntax-quad-construct-")) {
+//							return true;
+//						}
+//						return false;
+//				});
+//		for (File test : tests) {
+//			System.out.println("======== File: "+test.getName());
+//			try (BufferedReader br = new BufferedReader(new FileReader(test))) {
+//				String line = null;
+//				while( (line = br.readLine()) != null){
+//					System.out.println(line);
+//				}
+//			}
+//			System.out.println("==== Output of qparse --file "+ test.getName());
+//			arq.qparse.main("--in", "arq", "--file", test.getAbsolutePath());
+//		}
 	}
 }

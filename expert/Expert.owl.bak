@@ -1005,7 +1005,7 @@
         <rdf:type rdf:resource="http://www.owl-ontologies.com/Expert.owl#Profession"/>
         <be_researched rdf:resource="http://www.owl-ontologies.com/Expert.owl#ChenJianer"/>
         <associat rdf:resource="http://www.owl-ontologies.com/Expert.owl#Computer_Applied_Technology"/>
-		<associat rdf:resource="http://www.owl-ontologies.com/Expert.owl#Computer_Applied_Technology"/>
+		<associat rdf:resource="http://www.owl-ontologies.com/Expert.owl#Computer_Systems_Organization"/>
         <be_researched rdf:resource="http://www.owl-ontologies.com/Expert.owl#ZhaoHongJie"/>
     </owl:NamedIndividual>
     
@@ -1038,6 +1038,7 @@
         <graduate_from rdf:resource="http://www.owl-ontologies.com/Expert.owl#Central_South_University"/>
         <people_is rdf:resource="http://www.owl-ontologies.com/Expert.owl#Chinese"/>
         <research rdf:resource="http://www.owl-ontologies.com/Expert.owl#Computer_Optimization_Algorithm"/>
+		<research rdf:resource="http://www.owl-ontologies.com/Expert.owl#Bioinformatics"/>
         <mother_language_is rdf:resource="http://www.owl-ontologies.com/Expert.owl#english"/>
     </owl:NamedIndividual>
     
@@ -1093,6 +1094,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Expert.owl#Computer_Systems_Organization">
         <rdf:type rdf:resource="http://www.owl-ontologies.com/Expert.owl#Computer_Science_and_Technology"/>
+        <be_associated rdf:resource="http://www.owl-ontologies.com/Expert.owl#Bioinformatics"/>
     </owl:NamedIndividual>
     
 

@@ -4,3 +4,4 @@
 @include <OWL>.
 
 [rule1:(?x http://www.owl-ontologies.com/Expert.owl#research ?y)(?y http://www.owl-ontologies.com/Expert.owl#associat ?z) -> (?x http://www.owl-ontologies.com/Expert.owl#familiar_with ?z)]
+[rule2:(?x http://www.owl-ontologies.com/Expert.owl#familiar_with ?y)(?y http://www.owl-ontologies.com/Expert.owl#associat ?z) -> (?x http://www.owl-ontologies.com/Expert.owl#familiar_with ?z)]
